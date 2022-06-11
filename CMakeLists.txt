@@ -22,11 +22,8 @@
 # IN THE SOFTWARE.
 #
 
-if (PICO_SDK_PATH)
-	cmake_minimum_required(VERSION 3.13)
-else()
-	cmake_minimum_required(VERSION 2.8.12)
-endif()
+cmake_minimum_required(VERSION 3.15) # required for MSVC_RUNTIME
+
 include(CheckFunctionExists)
 include(CheckSymbolExists)
 include(CheckIncludeFile)
