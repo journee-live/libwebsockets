@@ -879,12 +879,8 @@ if ((CMAKE_COMPILER_IS_GNUCC OR CMAKE_COMPILER_IS_GNUCXX) AND NOT LWS_WITHOUT_TE
 		list(APPEND LIB_LIST_AT_END -lpthread)
 	endif()
 endif()
-message(wtffffffff)
 
 if (COMPILER_IS_CLANG)
-
-	message(clanggg)
-
 	# otherwise osx blows a bunch of openssl deprecated api errors
 	set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -Wno-deprecated-declarations -Wno-reserved-identifier -Wno-documentation -Wno-reserved-macro-identifier -Wno-everything" )
 
